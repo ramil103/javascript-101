@@ -3,6 +3,19 @@
 
 function isPalindrom(str) {
   // Твой код здесь
+    let sentencReversed = str.toLowerCase();
+    const sentence = str.toLowerCase();
+    sentencReversed = sentencReversed.split('');
+    sentencReversed = sentencReversed.reverse()
+    sentencReversed = sentencReversed.join('');
+    if (str.length < 2) {
+        console.log('Please enter word')
+    } else if (sentence == sentencReversed) {
+        console.log(str + ' => True');
+     } else if (sentence !== sentencReversed) {
+        console.log(str + ' => False');
+     } 
+
 }
 
 // Тесты
